@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp"
+    android:paddingTop="5sp"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundoutline"
+        android:id="@+id/movieBDLayout"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:id="@+id/movie_Backdrop"
+            android:contentDescription="@string/app_name"
+
+            />
+
+
+        </RelativeLayout>
+
+        <TextView
+        android:id="@+id/movie_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movieBDLayout"
+        android:text=""
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingTop="10sp"
+        />
+
+        <TextView
+        android:id="@+id/duracionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_Title"
+        android:text="@string/duracion_title"
+        android:textSize="18sp"
+        android:paddingTop="10sp"
+        android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_below="@id/duracionText"
+        android:paddingTop="10sp"
+        />
+
+        <TextView
+        android:id="@+id/releaseDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/duration"
+        android:text="@string/fecha_de_estreno"
+        android:textSize="18sp"
+        android:paddingTop="10sp"
+        android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/releaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_below="@id/releaseDateText"
+        android:paddingTop="10sp"
+        />
+
+        <TextView
+        android:id="@+id/averageRatingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/releaseDate"
+        android:text="@string/calificaci_n"
+        android:textSize="18sp"
+        android:paddingTop="10sp"
+        android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/averageRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_below="@id/averageRatingText"
+        android:paddingTop="10sp"
+        />
+
+        <TextView
+        android:id="@+id/genresText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/averageRating"
+        android:text="@string/generos"
+        android:textSize="18sp"
+        android:paddingTop="10sp"
+        android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/genres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_below="@id/genresText"
+        android:paddingTop="10sp"
+        />
+
+        <TextView
+        android:id="@+id/overviewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genres"
+        android:text="@string/descripcion"
+        android:textSize="18sp"
+        android:paddingTop="10sp"
+        android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_below="@id/overviewText"
+        android:paddingTop="10sp"
+        />
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

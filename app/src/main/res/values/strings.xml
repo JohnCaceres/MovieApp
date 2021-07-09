@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Movie App</string>
+    <string name="duracion_title">Duración:</string>
+    <string name="fecha_de_estreno">Fecha de estreno:</string>
+    <string name="calificaci_n">Calificación:</string>
+    <string name="generos">Géneros:</string>
+    <string name="descripcion">Descripción:</string>
+</resources>
